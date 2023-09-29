@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #e5e5ec;
   width: 90vmin;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -33,9 +33,9 @@ body {
 
 .search-box input {
   padding: 5px;
-  width: 80%;
-  border: none;
+  width: 70%;
   outline: none;
+  background-color: #e5e5ec;
   border-bottom: 3px solid rgb(112, 218, 117);
   font-size: 16px;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .result img {
-  width: 50%;
+  width: 60%;
 }
 
 #countryInfo {

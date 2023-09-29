@@ -10,22 +10,29 @@ searchBtn.addEventListener("click", () => {
   fetch(`https://restcountries.com/v3.1/name/${inputWord}?fullText=true`)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data)
-      // console.log(data[0].currencies);
+      console.log(data)
+      console.log(data[0]);
+    // console.log(Object.keys(data[0].currencies));
+    // console.log(Object.keys(data[0].currencies[0]));
+
+    // let currency1 = Object.keys(data[0].currencies[0]);
+    // console.log(currency1);
 
       let currencies = data[0].currencies;
+            console.log(currencies);
       let currency = Object.keys(currencies);
-      // console.log(currency);
+      
 
       // console.log(Array.from(currencies));
 
       let languages = data[0].languages;
+            console.log(languages);
       let language = Object.values(languages);
-      // console.log(language);
+      console.log(language);
 
       result.innerHTML = `
         <div class="imageContainer">
-        <img src="${data[0].flags.png}" alt="country flag">
+        <img src="${data[0].flags.png}" alt="${data[0].flags.alt}">
         <h2>${inputWord}</h2>
     </div>
     <div id="countryInfo">
@@ -49,3 +56,17 @@ input.addEventListener("keyup", function (event) {
     searchBtn.click();
   }
 });
+
+
+// let obj = {
+//     NGN: {name: 'Nigerian Naira', symbol: 'N'},
+
+//     // USD: {name: 'United States Dollar', symbol: '$'},
+
+//     // JPY: {name: 'Japanese Yen', symbol: 'J'}
+// }
+
+// console.log(obj);
+// let objKeys = Object.keys(obj)
+// console.log(objKeys);
+// console.log(objKeys[0]);
