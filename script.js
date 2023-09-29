@@ -10,8 +10,8 @@ searchBtn.addEventListener("click", () => {
   fetch(`https://restcountries.com/v3.1/name/${inputWord}?fullText=true`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data)
-      console.log(data[0]);
+      // console.log(data)
+      // console.log(data[0]);
     // console.log(Object.keys(data[0].currencies));
     // console.log(Object.keys(data[0].currencies[0]));
 
@@ -19,7 +19,7 @@ searchBtn.addEventListener("click", () => {
     // console.log(currency1);
 
       let currencies = data[0].currencies;
-            console.log(currencies);
+            // console.log(currencies);
       let currency = Object.keys(currencies);
       
 
@@ -51,13 +51,15 @@ searchBtn.addEventListener("click", () => {
     });
 });
 
-input.addEventListener("keyup", function (event) {
+//Make 'ENTER' button work for input field
+input.addEventListener("keyup", function(event) {
   if (event.keyCode == 13) {
     searchBtn.click();
   }
 });
 
 
+// *******************************TESTING***********************************************
 // let obj = {
 //     NGN: {name: 'Nigerian Naira', symbol: 'N'},
 
