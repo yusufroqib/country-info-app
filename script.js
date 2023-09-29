@@ -31,7 +31,7 @@ searchBtn.addEventListener("click", () => {
     <div id="countryInfo">
         <p class="eachInfo"><strong>Capital:</strong> ${data[0].capital[0]}</p>
         <p class="eachInfo"><strong>Continent:</strong> ${data[0].continents[0]}</p>
-        <p class="eachInfo"><strong>Population:</strong> ${data[0].population}</p>
+        <p class="eachInfo"><strong>Population:</strong> ${(data[0].population).toLocaleString()}</p>
         <p class="eachInfo"><strong>Currencies:</strong> ${currency[0]}</p>
         <p class="eachInfo"><strong>Language:</strong> ${language[0]}</p>
     </div>
