@@ -1,72 +1,72 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
 :root {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: rgb(155, 233, 159);
+  background-color: rgb(155, 233, 159);
 }
 
 .container {
-    background-color: #ffffff;
-    width: 90vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 50px 50px;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
-}
-.search-box {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  background-color: #ffffff;
+  width: 90vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 50px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
 
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
 .search-box input {
-    padding: 5px;
-    width: 80%;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid rgb(112, 218, 117);
-    font-size: 16px;
+  padding: 5px;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(112, 218, 117);
+  font-size: 16px;
 }
 
 .search-box button {
-    cursor: pointer;
-    background-color: rgb(112, 218, 117);
-    padding: 15px 25px;
-    /* width: 18%; */
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: #000000;
-    border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(112, 218, 117);
+  padding: 15px 25px;
+  /* width: 18%; */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #000000;
+  border-radius: 30px;
 }
 
 .imageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    place-items: center;
-    margin-top: 2rem;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
 }
 
 .imageContainer h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .result img {
-    width: 50%;
+  width: 50%;
 }
 
 #countryInfo {
@@ -74,13 +74,13 @@ body {
 }
 
 .eachInfo {
-    margin-top: 1.2rem;
-    font-size: 18px;
+  margin-top: 1.2rem;
+  font-size: 18px;
 }
 
 .error {
-    margin-top: 80px;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 5px 9px rgb(0, 42);
+  margin-top: 80px;
+  text-align: center;
+  color: red;
+  text-shadow: 2px 5px 9px rgb(0, 42);
 }
