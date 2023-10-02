@@ -5,7 +5,7 @@ let input = document.getElementById("inputWord");
 // console.log(result.innerHTML);
 
 searchBtn.addEventListener("click", () => {
-  let inputWord = document.getElementById("inputWord").value;
+  let inputWord = document.getElementById("inputWord").value.trim();
   // console.log(inputWord);
   fetch(`https://restcountries.com/v3.1/name/${inputWord}?fullText=true`)
     .then((response) => response.json())
